@@ -58,7 +58,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     console.log(sumResult);
     var multiplyResult = `The product of ${a} and ${b} and ${c} is ${secondMul}.`;
     console.log(multiplyResult);
-    return[secondSum ,secondMul , sumResult ,multiplyResult];
+    return[secondSum,secondMul,sumResult,multiplyResult];
     
 
 }
