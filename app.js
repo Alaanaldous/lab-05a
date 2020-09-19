@@ -9,7 +9,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
     var sum=a + b;
     var result1 = 'The sum of '+ a + ' and ' + b +' is '+ sum +'.';
-   // console.log(result1);
+    //console.log(result1);
     return[sum ,result1];
 }
 
@@ -28,8 +28,8 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) { //eslint-disable-line
     var multiply = a*b;
     var result2 ='The product of '+a+' and '+b+' is '+multiply+'.';
-   // console.log(result2);
-    return[multiply, result2];
+    //console.log(result2);
+    return[multiply,result2 ];
 
 }
 
@@ -54,10 +54,10 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     var firstMul = multiply(a,b);
     var secondMul = multiply(firstMul[0],c);
     //console.log(secondMul);
-    var sumResult = `${a} and ${b} and ${c} sum to ${secondSum}.`;
-    console.log(sumResult);
-    var multiplyResult = `The product of ${a} and ${b} and ${c} is ${secondMul}.`;
-    console.log(multiplyResult);
+    var sumResult = `${a} and ${b} and ${c} sum to ${secondSum[0]}.`;
+    //console.log(sumResult);
+    var multiplyResult = `The product of ${a} and ${b} and ${c} is ${secondMul[0]}.`;
+    //console.log(multiplyResult);
     return[secondSum,secondMul,sumResult,multiplyResult];
     
 
