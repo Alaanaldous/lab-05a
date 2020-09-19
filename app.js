@@ -8,9 +8,9 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
     var sum=a + b;
-    var result = 'The sum of '+ a + ' and ' + b +' is '+ sum +'.';
-    console.log(result);
-    return[sum ,result];
+    var result1 = 'The sum of '+ a + ' and ' + b +' is '+ sum +'.';
+   // console.log(result1);
+    return[sum ,result1];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -27,9 +27,9 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
     var multiply = a*b;
-    var result ='The product of '+a+' and '+b+' is '+multiply+'.';
-    console.log(result);
-    return[multiply, result];
+    var result2 ='The product of '+a+' and '+b+' is '+multiply+'.';
+   // console.log(result2);
+    return[multiply, result2];
 
 }
 
@@ -48,11 +48,23 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+    var firstSum =sum(a,b);
+    var secondSum = sum(firstSum[0],c);
+    //console.log(secondSum);
+    var firstMul = multiply(a,b);
+    var secondMul = multiply(firstMul[0],c);
+    //console.log(secondMul);
+    var sumResult = `${a} and ${b} and ${c} sum to ${secondSum}.`;
+    console.log(sumResult);
+    var multiplyResult = `The product of ${a} and ${b} and ${c} is ${secondMul}.`;
+    console.log(multiplyResult);
+    return[secondSum ,secondMul , sumResult ,multiplyResult];
+    
 
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
